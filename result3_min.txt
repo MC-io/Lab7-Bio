@@ -1,0 +1,42 @@
+Matriz de Distancias Original:
+-	A	B	C	D	E	
+A	0.00	41.62	18.05	30.02	16.55	
+B	41.62	0.00	36.19	24.69	34.02	
+C	18.05	36.19	0.00	23.84	6.21	
+D	30.02	24.69	23.84	0.00	20.64	
+E	16.55	34.02	6.21	20.64	0.00	
+
+Paso 1:
+Se unen las secuencias C + E -> CE con el valor 6.21
+
+Matriz de Distancias despues del 1 paso:
+-	A	B	CE	D	
+A	0.00	41.62	16.55	30.02	
+B	41.62	0.00	34.02	24.69	
+CE	16.55	34.02	0.00	20.64	
+D	30.02	24.69	20.64	0.00	
+
+Paso 2:
+Se unen las secuencias A + CE -> ACE con el valor 16.55
+
+Matriz de Distancias despues del 2 paso:
+-	ACE	B	D	
+ACE	0.00	34.02	20.64	
+B	34.02	0.00	24.69	
+D	20.64	24.69	0.00	
+
+Paso 3:
+Se unen las secuencias ACE + D -> ACED con el valor 20.64
+
+Matriz de Distancias despues del 3 paso:
+-	ACED	B	
+ACED	0.00	24.69	
+B	24.69	0.00	
+
+Paso 4:
+Se unen las secuencias ACED + B -> ACEDB con el valor 24.69
+
+Matriz de Distancias despues del 4 paso:
+-	ACEDB	
+ACEDB	0.00	
+
